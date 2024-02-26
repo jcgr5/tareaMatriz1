@@ -1,10 +1,17 @@
 package generar
 
-func CrearMatriz() [2][2]int {
-	//m, n := rand.Intn(8)+1, rand.Intn(8)+1
-	vector := [2][2]int{
-		{5, 6},
-		{3, 4},
+import (
+	"math/rand"
+)
+
+func CrearMatriz() [][]int {
+	m, n := rand.Intn(8)+1, rand.Intn(8)+1
+
+	var vector [][]int
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			vector[i][j] = rand.Intn(8) + 1
+		}
 	}
 	return vector
 }
