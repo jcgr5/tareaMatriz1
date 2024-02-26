@@ -1,0 +1,5 @@
+package generar
+
+func GenerarMatriz() {
+
+}
