@@ -1,4 +1,4 @@
-package ejecuta
+package ejecutar
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"github.com/jcgr5/tareaMatriz1/operaciones/sumatoria"
 )
 
-func ejecutar() {
+func Ejecutar() {
 	matrix := generar.CrearMatriz()
 	fmt.Println("Matriz", matrix)
 	column := sumatoria.SumColumnas(matrix)
